@@ -1,0 +1,5 @@
+@use 'mixins/mixins';
+
+h1 {
+  @include mixins.flex-justify-between;
+}

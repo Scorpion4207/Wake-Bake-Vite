@@ -1,0 +1,44 @@
+.header {
+  &__logo {
+    display: block;
+  }
+  &__top {
+    padding-top: 20px;
+    &-inner {
+      @include flex-all-between;
+    }
+    &-list {
+      display: flex;
+      gap: 40px;
+    }
+    &-item {
+
+    }
+    &-link {
+      position: relative;
+      display: block;
+      padding: 5px 0;
+      color: var(--nabornyy);
+      
+      &::before{
+        content: '';
+        position: absolute;
+        left: -13px;
+        top: -8px;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
+        background-color: var(--akcentnyy);
+        z-index: -1;
+        opacity: 0;
+        transition: opacity .5s;
+      }
+
+      &:hover{
+        &::before{
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

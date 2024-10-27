@@ -1,5 +1,6 @@
-@use 'mixins/mixins';
+@import './mixins';
+@import './base';
+@import './globals';
 
-h1 {
-  @include mixins.flex-justify-between;
-}
+@import './components/header.scss';
+@import './components/footer.scss'

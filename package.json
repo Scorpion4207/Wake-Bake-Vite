@@ -11,6 +11,7 @@
     "eslint": "^9.13.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
+    "fslightbox": "^3.4.2",
     "harp": "^0.46.1",
     "prettier": "^3.3.3",
     "sass": "^1.79.6",
